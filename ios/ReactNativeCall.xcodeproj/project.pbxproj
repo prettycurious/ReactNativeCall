@@ -39,6 +39,12 @@
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		CE134E342223DAC2000F5FAA /* CalendarManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE134E332223DAC2000F5FAA /* CalendarManager.m */; };
+		CE134E3D2223EB59000F5FAA /* CallDirectoryHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = CE134E3C2223EB59000F5FAA /* CallDirectoryHandler.m */; };
+		CE134E412223EB59000F5FAA /* CallDirectory.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CE134E392223EB59000F5FAA /* CallDirectory.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CE134E482223EDAD000F5FAA /* CallDirectoryManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE134E472223EDAD000F5FAA /* CallDirectoryManager.m */; };
+		CE134E4B2224D379000F5FAA /* RNTMapManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CE134E4A2224D379000F5FAA /* RNTMapManager.m */; };
+		CE134E4E2224DC52000F5FAA /* RCTConvert+Mapkit.m in Sources */ = {isa = PBXBuildFile; fileRef = CE134E4D2224DC52000F5FAA /* RCTConvert+Mapkit.m */; };
+		CE134E512224E06B000F5FAA /* RNTMapView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE134E502224E06B000F5FAA /* RNTMapView.m */; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
 		ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2971642150620600B7C4FE /* JavaScriptCore.framework */; };
 /* End PBXBuildFile section */
@@ -317,7 +323,28 @@
 			remoteGlobalIDString = ED296FEE214C9CF800B7C4FE;
 			remoteInfo = "jsiexecutor-tvOS";
 		};
+		CE134E3F2223EB59000F5FAA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE134E382223EB59000F5FAA;
+			remoteInfo = CallDirectory;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CE134E452223EB59000F5FAA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CE134E412223EB59000F5FAA /* CallDirectory.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
@@ -348,6 +375,20 @@
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
 		CE134E052223D9C4000F5FAA /* CalendarManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalendarManager.h; sourceTree = "<group>"; };
 		CE134E332223DAC2000F5FAA /* CalendarManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarManager.m; sourceTree = "<group>"; };
+		CE134E392223EB59000F5FAA /* CallDirectory.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CallDirectory.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE134E3B2223EB59000F5FAA /* CallDirectoryHandler.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallDirectoryHandler.h; sourceTree = "<group>"; };
+		CE134E3C2223EB59000F5FAA /* CallDirectoryHandler.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallDirectoryHandler.m; sourceTree = "<group>"; };
+		CE134E3E2223EB59000F5FAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE134E462223ED70000F5FAA /* CallDirectoryManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallDirectoryManager.h; sourceTree = "<group>"; };
+		CE134E472223EDAD000F5FAA /* CallDirectoryManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallDirectoryManager.m; sourceTree = "<group>"; };
+		CE134E492224D310000F5FAA /* RNTMapManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNTMapManager.h; sourceTree = "<group>"; };
+		CE134E4A2224D379000F5FAA /* RNTMapManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNTMapManager.m; sourceTree = "<group>"; };
+		CE134E4C2224DBE1000F5FAA /* RCTConvert+Mapkit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RCTConvert+Mapkit.h"; sourceTree = "<group>"; };
+		CE134E4D2224DC52000F5FAA /* RCTConvert+Mapkit.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RCTConvert+Mapkit.m"; sourceTree = "<group>"; };
+		CE134E4F2224E041000F5FAA /* RNTMapView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNTMapView.h; sourceTree = "<group>"; };
+		CE134E502224E06B000F5FAA /* RNTMapView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNTMapView.m; sourceTree = "<group>"; };
+		CE134E8222277619000F5FAA /* CallDirectory.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CallDirectory.entitlements; sourceTree = "<group>"; };
+		CE134E8322277921000F5FAA /* ReactNativeCall.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = ReactNativeCall.entitlements; path = ReactNativeCall/ReactNativeCall.entitlements; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -402,6 +443,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE134E362223EB59000F5FAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +538,7 @@
 		13B07FAE1A68108700A75B9A /* ReactNativeCall */ = {
 			isa = PBXGroup;
 			children = (
+				CE134E8322277921000F5FAA /* ReactNativeCall.entitlements */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -499,6 +548,14 @@
 				13B07FB71A68108700A75B9A /* main.m */,
 				CE134E052223D9C4000F5FAA /* CalendarManager.h */,
 				CE134E332223DAC2000F5FAA /* CalendarManager.m */,
+				CE134E462223ED70000F5FAA /* CallDirectoryManager.h */,
+				CE134E472223EDAD000F5FAA /* CallDirectoryManager.m */,
+				CE134E492224D310000F5FAA /* RNTMapManager.h */,
+				CE134E4A2224D379000F5FAA /* RNTMapManager.m */,
+				CE134E4C2224DBE1000F5FAA /* RCTConvert+Mapkit.h */,
+				CE134E4D2224DC52000F5FAA /* RCTConvert+Mapkit.m */,
+				CE134E4F2224E041000F5FAA /* RNTMapView.h */,
+				CE134E502224E06B000F5FAA /* RNTMapView.m */,
 			);
 			name = ReactNativeCall;
 			sourceTree = "<group>";
@@ -588,6 +645,7 @@
 				13B07FAE1A68108700A75B9A /* ReactNativeCall */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* ReactNativeCallTests */,
+				CE134E3A2223EB59000F5FAA /* CallDirectory */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 			);
@@ -603,6 +661,7 @@
 				00E356EE1AD99517003FC87E /* ReactNativeCallTests.xctest */,
 				2D02E47B1E0B4A5D006451C7 /* ReactNativeCall-tvOS.app */,
 				2D02E4901E0B4A5D006451C7 /* ReactNativeCall-tvOSTests.xctest */,
+				CE134E392223EB59000F5FAA /* CallDirectory.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -614,6 +673,17 @@
 				2D16E6721FA4F8DC00B85C8A /* libRCTBlob-tvOS.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		CE134E3A2223EB59000F5FAA /* CallDirectory */ = {
+			isa = PBXGroup;
+			children = (
+				CE134E8222277619000F5FAA /* CallDirectory.entitlements */,
+				CE134E3B2223EB59000F5FAA /* CallDirectoryHandler.h */,
+				CE134E3C2223EB59000F5FAA /* CallDirectoryHandler.m */,
+				CE134E3E2223EB59000F5FAA /* Info.plist */,
+			);
+			path = CallDirectory;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -645,10 +715,12 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				CE134E452223EB59000F5FAA /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				CE134E402223EB59000F5FAA /* PBXTargetDependency */,
 			);
 			name = ReactNativeCall;
 			productName = "Hello World";
@@ -691,6 +763,23 @@
 			productReference = 2D02E4901E0B4A5D006451C7 /* ReactNativeCall-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		CE134E382223EB59000F5FAA /* CallDirectory */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CE134E422223EB59000F5FAA /* Build configuration list for PBXNativeTarget "CallDirectory" */;
+			buildPhases = (
+				CE134E352223EB59000F5FAA /* Sources */,
+				CE134E362223EB59000F5FAA /* Frameworks */,
+				CE134E372223EB59000F5FAA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CallDirectory;
+			productName = CallDirectory;
+			productReference = CE134E392223EB59000F5FAA /* CallDirectory.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -702,7 +791,18 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 9R5BGF7R73;
+						ProvisioningStyle = Manual;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
+					};
+					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = 9R5BGF7R73;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -712,6 +812,16 @@
 						CreatedOnToolsVersion = 8.2.1;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 2D02E47A1E0B4A5D006451C7;
+					};
+					CE134E382223EB59000F5FAA = {
+						CreatedOnToolsVersion = 10.1;
+						DevelopmentTeam = 9R5BGF7R73;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -782,6 +892,7 @@
 				00E356ED1AD99517003FC87E /* ReactNativeCallTests */,
 				2D02E47A1E0B4A5D006451C7 /* ReactNativeCall-tvOS */,
 				2D02E48F1E0B4A5D006451C7 /* ReactNativeCall-tvOSTests */,
+				CE134E382223EB59000F5FAA /* CallDirectory */,
 			);
 		};
 /* End PBXProject section */
@@ -1080,6 +1191,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE134E372223EB59000F5FAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -1126,7 +1244,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE134E512224E06B000F5FAA /* RNTMapView.m in Sources */,
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				CE134E482223EDAD000F5FAA /* CallDirectoryManager.m in Sources */,
+				CE134E4B2224D379000F5FAA /* RNTMapManager.m in Sources */,
+				CE134E4E2224DC52000F5FAA /* RCTConvert+Mapkit.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 				CE134E342223DAC2000F5FAA /* CalendarManager.m in Sources */,
 			);
@@ -1149,6 +1271,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CE134E352223EB59000F5FAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CE134E3D2223EB59000F5FAA /* CallDirectoryHandler.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1161,6 +1291,11 @@
 			isa = PBXTargetDependency;
 			target = 2D02E47A1E0B4A5D006451C7 /* ReactNativeCall-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
+		};
+		CE134E402223EB59000F5FAA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CE134E382223EB59000F5FAA /* CallDirectory */;
+			targetProxy = CE134E3F2223EB59000F5FAA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1181,6 +1316,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9R5BGF7R73;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1194,6 +1332,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeCall.app/ReactNativeCall";
 			};
 			name = Debug;
@@ -1202,7 +1341,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ReactNativeCallTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -1212,6 +1353,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactNativeCall.app/ReactNativeCall";
 			};
 			name = Release;
@@ -1220,8 +1362,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ReactNativeCall/ReactNativeCall.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
+				DEVELOPMENT_TEAM = 9R5BGF7R73;
 				INFOPLIST_FILE = ReactNativeCall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1229,8 +1375,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = net.stec.demo;
 				PRODUCT_NAME = ReactNativeCall;
+				PROVISIONING_PROFILE_SPECIFIER = demo_Dev;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -1239,7 +1386,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ReactNativeCall/ReactNativeCall.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ReactNativeCall/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -1247,8 +1398,9 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = net.stec.demo;
 				PRODUCT_NAME = ReactNativeCall;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
@@ -1454,6 +1606,64 @@
 			};
 			name = Release;
 		};
+		CE134E432223EB59000F5FAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = CallDirectory/CallDirectory.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9R5BGF7R73;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = CallDirectory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = net.stec.demo.CallDirectory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = demo_dev_callkit;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CE134E442223EB59000F5FAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = CallDirectory/CallDirectory.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = CallDirectory/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = net.stec.demo.CallDirectory;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1498,6 +1708,15 @@
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,
 				83CBBA211A601CBA00E9B192 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CE134E422223EB59000F5FAA /* Build configuration list for PBXNativeTarget "CallDirectory" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CE134E432223EB59000F5FAA /* Debug */,
+				CE134E442223EB59000F5FAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
